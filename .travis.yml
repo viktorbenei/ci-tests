@@ -8,3 +8,4 @@ xcode_scheme: BitriseXcode7Sample
 
 script:
   - bash ./install_bitrise_cli.sh
+  - bitrise run primary

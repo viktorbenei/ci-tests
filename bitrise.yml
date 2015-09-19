@@ -1,10 +1,12 @@
 ---
 format_version: 1.0.0
 default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+
 app:
   envs:
   - BITRISE_PROJECT_PATH: "./BitriseXcode7Sample.xcodeproj"
   - BITRISE_SCHEME: BitriseXcode7Sample
+
 trigger_map:
 - pattern: master
   is_pull_request_allowed: false
@@ -12,6 +14,7 @@ trigger_map:
 - pattern: "*"
   is_pull_request_allowed: true
   workflow: primary
+
 workflows:
   primary:
     steps:
@@ -25,30 +28,11 @@ workflows:
 
             env
     - git-clone@3.0.0:
-        outputs:
-        - GIT_CLONE_COMMIT_HASH:
-          opts:
-            title: Cloned git commit's commit hash
-        - GIT_CLONE_COMMIT_MESSAGE_SUBJECT:
-          opts:
-            title: Cloned git commit's message subject
-        - GIT_CLONE_COMMIT_MESSAGE_BODY:
-          opts:
-            title: Cloned git commit's message body
-        - GIT_CLONE_COMMIT_AUTHOR_NAME:
-          opts:
-            title: Cloned git commit's author name
-        - GIT_CLONE_COMMIT_AUTHOR_EMAIL:
-          opts:
-            title: Cloned git commit's author email address
-        - GIT_CLONE_COMMIT_COMMITER_NAME:
-          opts:
-            title: Cloned git commit's committer name
-        - GIT_CLONE_COMMIT_COMMITER_EMAIL:
-          opts:
-            title: Cloned git commit's committer email
-    - certificate-and-profile-installer@1.2.0: {}
+        run_if: enveq "BITRISE_IO" "true"
+    - certificate-and-profile-installer@1.2.0:
+        run_if: enveq "BITRISE_IO" "true"
     - select-xcode-version@2.0.0:
+        run_if: enveq "BITRISE_IO" "true"
         inputs:
         - version_channel_id: "-latest"
     - xcode-test@1.1.2:
@@ -71,28 +55,6 @@ workflows:
 
             env
     - git-clone@3.0.0:
-        outputs:
-        - GIT_CLONE_COMMIT_HASH:
-          opts:
-            title: Cloned git commit's commit hash
-        - GIT_CLONE_COMMIT_MESSAGE_SUBJECT:
-          opts:
-            title: Cloned git commit's message subject
-        - GIT_CLONE_COMMIT_MESSAGE_BODY:
-          opts:
-            title: Cloned git commit's message body
-        - GIT_CLONE_COMMIT_AUTHOR_NAME:
-          opts:
-            title: Cloned git commit's author name
-        - GIT_CLONE_COMMIT_AUTHOR_EMAIL:
-          opts:
-            title: Cloned git commit's author email address
-        - GIT_CLONE_COMMIT_COMMITER_NAME:
-          opts:
-            title: Cloned git commit's committer name
-        - GIT_CLONE_COMMIT_COMMITER_EMAIL:
-          opts:
-            title: Cloned git commit's committer email
     - certificate-and-profile-installer@1.2.0: {}
     - select-xcode-version@2.0.0:
         inputs:
