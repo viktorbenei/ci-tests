@@ -1,0 +1,7 @@
+os:
+  - osx
+osx_image: xcode7
+
+language: objective-c
+xcode_project: ./BitriseXcode7Sample.xcodeproj
+xcode_scheme: BitriseXcode7Sample
