@@ -41,6 +41,13 @@ workflows:
         - simulator_device: iPhone 6
           opts:
             is_expand: false
+        - is_clean_build: 'yes'
+    - xcode-test@1.2.0:
+        title: 'Xcode: Unit Test'
+        inputs:
+        - simulator_device: iPhone 5s
+          opts:
+            is_expand: false
         - is_clean_build: 'no'
     envs:
   master:
