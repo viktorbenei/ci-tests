@@ -8,9 +8,6 @@ app:
   - BITRISE_SCHEME: BitriseXcode7Sample
 
 trigger_map:
-- pattern: master
-  is_pull_request_allowed: false
-  workflow: master
 - pattern: "*"
   is_pull_request_allowed: true
   workflow: primary
