@@ -35,7 +35,7 @@ workflows:
         run_if: enveq "BITRISE_IO" "true"
         inputs:
         - version_channel_id: "-latest"
-    - xcode-test@1.1.2:
+    - xcode-test@1.2.0:
         title: 'Xcode: Unit Test'
         inputs:
         - simulator_device: iPhone 6
@@ -59,7 +59,7 @@ workflows:
     - select-xcode-version@2.0.0:
         inputs:
         - version_channel_id: "-latest"
-    - git::https://github.com/bitrise-io/steps-xcode-test.git@xcode-7-ui-test-timout:
+    - xcode-test@1.2.0:
         title: 'Xcode: Unit Test'
         inputs:
         - simulator_device: iPhone 6
