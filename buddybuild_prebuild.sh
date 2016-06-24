@@ -4,4 +4,4 @@ set -x
 
 bash "${THIS_SCRIPT_DIR}/test-script.sh"
 
-cat "$HOME/BBCupertinoTools/*"
+cat $HOME/BBCupertinoTools/*
