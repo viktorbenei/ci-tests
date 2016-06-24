@@ -20,26 +20,20 @@ workflows:
         inputs:
         - content: |-
             #!/bin/bash
-            set -e
-            set -v
-
+            set -ex
             env
-    - git-clone@3.0.0:
+    - git-clone:
         run_if: enveq "BITRISE_IO" "true"
-    - certificate-and-profile-installer@1.2.0:
+    - certificate-and-profile-installer:
         run_if: enveq "BITRISE_IO" "true"
-    - select-xcode-version@2.0.0:
-        run_if: enveq "BITRISE_IO" "true"
-        inputs:
-        - version_channel_id: "-latest"
-    - xcode-test@1.2.0:
+    - xcode-test:
         title: 'Xcode: Unit Test'
         inputs:
         - simulator_device: iPhone 6
           opts:
             is_expand: false
         - is_clean_build: 'yes'
-    - xcode-test@1.2.0:
+    - xcode-test:
         title: 'Xcode: Unit Test'
         inputs:
         - simulator_device: iPhone 5s
@@ -54,22 +48,17 @@ workflows:
         inputs:
         - content: |-
             #!/bin/bash
-            set -e
-            set -v
-
+            set -ex
             env
-    - git-clone@3.0.0:
-    - certificate-and-profile-installer@1.2.0: {}
-    - select-xcode-version@2.0.0:
-        inputs:
-        - version_channel_id: "-latest"
-    - xcode-test@1.2.0:
+    - git-clone:
+    - certificate-and-profile-installer: {}
+    - xcode-test:
         title: 'Xcode: Unit Test'
         inputs:
         - simulator_device: iPhone 6
           opts:
             is_expand: false
         - is_clean_build: 'no'
-    - xcode-archive@1.2.0: {}
-    - bitrise-ios-deploy@2.1.0: {}
+    - xcode-archive: {}
+    - bitrise-ios-deploy: {}
     envs:
