@@ -9,7 +9,7 @@ ls -alh
 
 tree -L 2 /
 
-tree -L 2 "$HOME"
+tree -L 3 "$HOME"
 
 which brew
 brew install tree
