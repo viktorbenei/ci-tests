@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ex
+set -x
 
 env
 
@@ -10,3 +10,6 @@ ls -alh
 tree -L 2 /
 
 tree -L 2 "$HOME"
+
+which brew
+brew install tree
