@@ -5,3 +5,5 @@ set -x
 bash "${THIS_SCRIPT_DIR}/test-script.sh"
 
 cat $HOME/BBCupertinoTools/*
+
+echo "Dont fail"
