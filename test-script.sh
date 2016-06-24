@@ -13,3 +13,7 @@ tree -L 3 "$HOME"
 
 which brew
 brew install tree
+
+uptime
+
+echo "Dont fail"
