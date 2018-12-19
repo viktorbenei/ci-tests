@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:BitriseXcode7Sample.xcodeproj">
+      location = "self:ios-xcode-8.0.xcodeproj">
    </FileRef>
 </Workspace>

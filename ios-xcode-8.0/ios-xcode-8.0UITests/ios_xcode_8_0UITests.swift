@@ -1,14 +1,14 @@
 //
-//  BitriseXcode7SampleUITests.swift
-//  BitriseXcode7SampleUITests
+//  ios_xcode_8_0UITests.swift
+//  ios-xcode-8.0UITests
 //
-//  Created by Viktor Benei on 9/16/15.
-//  Copyright © 2015 Bitrise. All rights reserved.
+//  Created by Viktor Benei on 17/09/16.
+//  Copyright © 2016 bitrise. All rights reserved.
 //
 
 import XCTest
 
-class BitriseXcode7SampleUITests: XCTestCase {
+class ios_xcode_8_0UITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
@@ -28,26 +28,9 @@ class BitriseXcode7SampleUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testAddAnItemGoToDetailsThenDeleteIt() {
+    func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
-        
-        let app = XCUIApplication()
-        let masterNavigationBar = app.navigationBars["Master"]
-        masterNavigationBar.buttons["Add"].tap()
-        
-        let tablesQuery = app.tables
-        let firstElemQuery = tablesQuery.cells.elementBoundByIndex(0)
-        firstElemQuery.tap()
-        app.navigationBars.matchingIdentifier("Detail").buttons["Master"].tap()
-        masterNavigationBar.buttons["Edit"].tap()
-        
-        firstElemQuery.buttons.elementBoundByIndex(0).tap()
-        firstElemQuery.buttons["Delete"].tap()
-        
-        masterNavigationBar.buttons["Done"].tap()
-        
-        XCTAssert(tablesQuery.cells.count == 0)
     }
+    
 }

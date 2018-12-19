@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BAC384091BA9F569005CFE20"
-               BuildableName = "BitriseXcode7Sample.app"
-               BlueprintName = "BitriseXcode7Sample"
-               ReferencedContainer = "container:BitriseXcode7Sample.xcodeproj">
+               BlueprintIdentifier = "BA5212DB1D8D374500C16D80"
+               BuildableName = "ios-xcode-8.0.app"
+               BlueprintName = "ios-xcode-8.0"
+               ReferencedContainer = "container:ios-xcode-8.0.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BAC384221BA9F569005CFE20"
-               BuildableName = "BitriseXcode7SampleTests.xctest"
-               BlueprintName = "BitriseXcode7SampleTests"
-               ReferencedContainer = "container:BitriseXcode7Sample.xcodeproj">
+               BlueprintIdentifier = "BA5212F21D8D374500C16D80"
+               BuildableName = "ios-xcode-8.0Tests.xctest"
+               BlueprintName = "ios-xcode-8.0Tests"
+               ReferencedContainer = "container:ios-xcode-8.0.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BAC3842D1BA9F569005CFE20"
-               BuildableName = "BitriseXcode7SampleUITests.xctest"
-               BlueprintName = "BitriseXcode7SampleUITests"
-               ReferencedContainer = "container:BitriseXcode7Sample.xcodeproj">
+               BlueprintIdentifier = "BA5212FD1D8D374500C16D80"
+               BuildableName = "ios-xcode-8.0UITests.xctest"
+               BlueprintName = "ios-xcode-8.0UITests"
+               ReferencedContainer = "container:ios-xcode-8.0.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BAC384091BA9F569005CFE20"
-            BuildableName = "BitriseXcode7Sample.app"
-            BlueprintName = "BitriseXcode7Sample"
-            ReferencedContainer = "container:BitriseXcode7Sample.xcodeproj">
+            BlueprintIdentifier = "BA5212DB1D8D374500C16D80"
+            BuildableName = "ios-xcode-8.0.app"
+            BlueprintName = "ios-xcode-8.0"
+            ReferencedContainer = "container:ios-xcode-8.0.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BAC384091BA9F569005CFE20"
-            BuildableName = "BitriseXcode7Sample.app"
-            BlueprintName = "BitriseXcode7Sample"
-            ReferencedContainer = "container:BitriseXcode7Sample.xcodeproj">
+            BlueprintIdentifier = "BA5212DB1D8D374500C16D80"
+            BuildableName = "ios-xcode-8.0.app"
+            BlueprintName = "ios-xcode-8.0"
+            ReferencedContainer = "container:ios-xcode-8.0.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BAC384091BA9F569005CFE20"
-            BuildableName = "BitriseXcode7Sample.app"
-            BlueprintName = "BitriseXcode7Sample"
-            ReferencedContainer = "container:BitriseXcode7Sample.xcodeproj">
+            BlueprintIdentifier = "BA5212DB1D8D374500C16D80"
+            BuildableName = "ios-xcode-8.0.app"
+            BlueprintName = "ios-xcode-8.0"
+            ReferencedContainer = "container:ios-xcode-8.0.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

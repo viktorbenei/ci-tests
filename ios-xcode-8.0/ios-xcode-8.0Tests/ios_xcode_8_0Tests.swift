@@ -1,15 +1,15 @@
 //
-//  BitriseXcode7SampleTests.swift
-//  BitriseXcode7SampleTests
+//  ios_xcode_8_0Tests.swift
+//  ios-xcode-8.0Tests
 //
-//  Created by Viktor Benei on 9/16/15.
-//  Copyright © 2015 Bitrise. All rights reserved.
+//  Created by Viktor Benei on 17/09/16.
+//  Copyright © 2016 bitrise. All rights reserved.
 //
 
 import XCTest
-@testable import BitriseXcode7Sample
+@testable import ios_xcode_8_0
 
-class BitriseXcode7SampleTests: XCTestCase {
+class ios_xcode_8_0Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -28,7 +28,7 @@ class BitriseXcode7SampleTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }
